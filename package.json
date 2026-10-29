@@ -1,0 +1,19 @@
+{
+  "name": "se-primer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SE Primer: Sokratik AI Tutor ile yazılım mühendisliği kriz simülasyonu",
+  "type": "module",
+  "scripts": {
+    "serve": "python -m http.server 5173",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:demo": "cypress run --spec cypress/e2e/demo.cy.js",
+    "test:e2e": "start-server-and-test serve http://localhost:5173 cy:run",
+    "eval": "node eval/run-eval.mjs"
+  },
+  "devDependencies": {
+    "cypress": "^16.2.0",
+    "start-server-and-test": "^3.0.13"
+  }
+}
